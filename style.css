@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+.logo {
+  float: right;
+  margin-top: 20;
+}
+body {
+  background-color: #24252a;
+  margin: 0;
+  padding: 0;
+}
+.Bd_Contact {
+  text-align: center;
+}
+.navbar {
+  width: 100%;
+  background: #594848;
+  height: 80px;
+  opacity: 0.98;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+}
+ul li {
+  float: left;
+  margin-top: 20px;
+}
+ul li a {
+  width: 150px;
+  color: white;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  padding: 6;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+a:hover {
+  background: skyblue;
+  color: black;
+}
+ul li ul {
+  background: #594848;
+}
+ul li ul li {
+  float: none;
+}
+ul li ul {
+  display: none;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+.slider {
+  width: 1200px;
+  height: 750px;
+  background: url("carros/X6.jpg");
+  margin: 100px auto;
+  animation: slide 20s ease-out alternate infinite;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  overflow: auto;
+  background: #f2f2f2;
+}
+.Fotos {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 390px;
+  opacity: 0.9;
+  z-index: -1;
+  transition: 0.5s;
+}
+.Fotos:hover {
+  opacity: 1;
+  color: blue;
+}
+.Fotos a:hover {
+  color: blue;
+  background-color: blue;
+  font-weight: bold;
+}
+.Fotos img {
+  width: 100%;
+  height: auto;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+.Sobre_p {
+  color: white;
+  font-family: arial;
+  text-align: center;
+  margin-left: 2%;
+  font-weight: bold;
+}
+.p_texto {
+  color: black;
+}
+footer {
+  font-weight: bold;
+  background: #594848;
+  font-size: 17px;
+  padding: 10px;
+  font-family: arial;
+  color: white;
+  text-align: center;
+}
+#texto {
+  text-align: center;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.box {
+  box-sizing: border-box;
+  width: 250px;
+  background-color: grey;
+  margin-left: 200px;
+  text-align: center;
+}
+.box p {
+  text-align: justify;
+  font-weight: bold;
+}
+label {
+  font-weight: bold;
+}
+button {
+  background: none;
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+button:hover {
+  background-color: lightblue;
+  font-weight: bold;
+}
+.Sobre_Contacto {
+  color: white;
+}
+.Sobre_Contacto:hover {
+  background: none;
+  color: skyblue;
+}
+
+@keyframes slide {
+  25% {
+    background: url("carros/Fortuner.jpg");
+    background-repeat: no-repeat;
+  }
+  50% {
+    background: url("carros/Macan.jpg");
+    background-repeat: no-repeat;
+  }
+  75% {
+    background: url("carros/Class\ G.jpg");
+    background-repeat: no-repeat;
+  }
+  100% {
+    background: url("carros/X6.jpg");
+    background-repeat: no-repeat;
+  }
+}
